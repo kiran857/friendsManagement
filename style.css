@@ -1,0 +1,135 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color:#C0C0C0;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 8px 10px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.app-container {
+    width: 700px;
+    height: 500px;
+    background-color: rgb(139, 207, 250);
+    margin: 70px auto;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    position: relative;
+}
+
+.app-container .heading, .panel .container-form .heading-form {
+    position: relative;
+    font-size: 30px;
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+.app-container .heading #addBtn, .panel .container-form .heading-form #closeForm {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+
+.app-container .friends-panel .list-item {
+    list-style-type: none;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid gray;
+}
+
+.app-container .friends-panel .list-item:hover {
+    box-shadow: 10px 12px 10px 10px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.app-container .friends-panel .list-item .deleteBtn, .app-container .friends-panel .list-item .editBtn {
+    background-color: orange;
+    font-size: 10px;
+    float: right;
+    color: #000;
+    padding: 4px;
+    display: none;
+    cursor: pointer;
+}
+
+.app-container .friends-panel .list-item .editBtn {
+    margin-left: 10px;
+}
+
+.app-container .friends-panel .list-item:hover > .deleteBtn, .app-container .friends-panel .list-item:hover > .editBtn {
+    display: block;
+}
+
+.app-container .friends-panel .list-item .updateBtn{
+    position: absolute;
+    top:14px;
+    right:90px;
+    background-color: #4CAF50 ;
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+     cursor: pointer;   
+}
+
+.app-container .friends-panel {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 56px);
+    top: 56px;
+    left: 0px;
+    overflow-y: scroll;
+}
+
+.panel {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.panel .container-form {
+    width: 700px;
+    height: 500px;
+    background-color: rgb(156, 206, 238);
+    margin: 70px auto;
+}
+
+.panel .container-form #friend-form {
+    width: 330px;
+    margin: 60px auto;
+}
+
+.panel .container-form .heading-form #closeForm {
+    background-color: orange;
+    color: black;
+}
+
+.panel .container-form #friend-form #name{
+    margin: 20px;
+
+}
